@@ -4,6 +4,7 @@ using CommandRunner.Commands;
 using System.Linq;
 using Ninject;
 using System.Collections.Generic;
+using TestMonkey2.Engine;
 
 namespace CommandRunner
 {
@@ -131,6 +132,10 @@ namespace CommandRunner
                 var scopeStack = new Stack<string>();
                 var testStack = new Stack<string>();
                 testStack.Count();
+
+                var resultTree = new TreeNode<string>("base");
+                //resultTree.AddChild()
+
 
                 var item = "";
                 scopeStack.Push("a");
